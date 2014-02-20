@@ -70,15 +70,46 @@ span.heading {
 
     padding-left: 4px;
 }
+
+.left_side_placement {
+	float: left;
+	position: relative;
+	display: inline-block;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+.right_side_placement {
+	float: right;
+	position: relative;
+	display: inline-block;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	
+	padding: 5px;
+	margin-bottom: 40px;
+}
+
 /*
 	Main Pane
 */
 
-#root_pane {
+body {
 	border-style: ridge;
 	border-width: 5px;
 	
+	margin:0 auto;
+	
+	position: absolute;
+	
+	margin: 5px;
 	padding: 5px;
+	display: block;
 }
 
 /*
@@ -86,24 +117,14 @@ span.heading {
 */
 
 #basic_info_pane {
-    position: relative;
-
-    top: 0px;
-
     width: 595px;
 }
-
 
 /*
     Culture Features Pane
 */
 
 #culture_features_pane {
-    position: relative;
-
-    top: 120px;
-    left: 750px;
-
     width: 395px;
 }
 
@@ -112,12 +133,6 @@ span.heading {
 }
 
 #reaction_modifiers_pane {
-    position: relative;
-
-    top: 120px;
-    left: 1220px;
-	
-	display: inline;
 }
 
 /*
@@ -125,11 +140,6 @@ span.heading {
 */
 
 #cp_summary_pane {
-    position: relative;
-
-    top: 0px;
-    left: 650px;
-
     width: 895px;
 }
 
@@ -139,19 +149,11 @@ span.heading {
 */
 
 #basic_attribute_pane {
-    position: relative;
-    top: 120px;
-
     width: 400px;
 }
 
 #movement_pane {
-    position: relative;
-    top: 320px;
-
     width: 680px;
-	
-	display: inline;
 }
 
 #movement_table_pane {
@@ -180,10 +182,6 @@ span.heading {
 */
 
 #advantages_pane {
-    position: relative;
-    top: 750px;
-    left: 550px;
-
     width: 495px;
 }
 
@@ -193,9 +191,6 @@ span.heading {
 */
 
 #skills_pane {
-    position: relative;
-    top: 750px;
-
     width: 495px;
 }
 
@@ -205,9 +200,5 @@ span.heading {
 */
 
 #disadvantages_pane {
-    position: relative;
-    top: 750px;
-    left: 1100px;
-
     width: 545px;
 }
